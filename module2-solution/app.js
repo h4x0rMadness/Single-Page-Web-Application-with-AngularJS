@@ -51,6 +51,9 @@ function ShoppingListCheckOffService() {
   }, {
     name: 'blueberry',
     quantity: 1
+  }, {
+    name: 'taco',
+    quantity: 3
   }];
 
   //var toBuyList = []; make it remain undefined?
