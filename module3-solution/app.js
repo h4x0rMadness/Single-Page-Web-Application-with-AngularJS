@@ -31,26 +31,29 @@ function NarrowItDownController(MenuSearchService) {
   //                             && controller.found.length === 0);
   controller.items = [];
   controller.searchTerm = "";
-  controller.logMenuList = function(searchTerm) {
+  controller.displayMessage = false;
+
+  controller.logMenuList = function() {
     controller.items = [];
-    controller.hasPressedButton = true;
-
-
+    if (controller.searchTerm.length == 0) {
+      controller.displayMessage = true;
+      return;
+    }
     var promise = MenuSearchService.getMatchedMenuItems(controller.searchTerm);
 
     promise.then(function (items) {
       if (items && items.length > 0) {
         controller.items = items;
+        controller.displayMessage = false;
+      }
+      else {
+        controller.displayMessage = true;
       }
     })
     .catch(function (error) {
       console.log("some error!");
     });
 
-    console.log('hasPressed: ' + controller.hasPressedButton +" length is 0: "+
-    controller.items.length === 0 + " display? " + controller.displayMessage);
-    controller.displayMessage = (controller.hasPressedButton
-                                && controller.items.length === 0);
   };
 
   controller.removeItem = function (index) {

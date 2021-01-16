@@ -24,7 +24,7 @@
       items="controller.items"
       on-remove="controller.removeItem(index)">
     </found-items>
-    <h2 ng-show="controller.displayMessage">
+    <h2 ng-if="controller.displayMessage">
       Nothing found!
     </h2>
   </div>
