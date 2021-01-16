@@ -1,0 +1,10 @@
+<ol>
+  <li ng-repeat='item in controller.items'>
+    <div class="jumbotron">
+                <h3>{{ item['name'] }}</h3>
+                <h3>{{ item['short_name'] }}</h3>
+                <h4>{{ item['description'] }}</h4>
+                <input type="button" ng-click="controller.removeItem({index: $index})" class="btn btn-lg btn-primary" value="Don't want this one!">
+    </div>
+  </li>
+</ol>
