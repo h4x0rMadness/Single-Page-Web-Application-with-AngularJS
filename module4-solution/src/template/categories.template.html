@@ -1,0 +1,11 @@
+<h2>This is the categories page.</h2>
+<a ui-sref="home">Click here to home page.</a>
+<br>
+<br>Click single category to view specific items.</br>
+
+<ul>
+  <li class="thead-dark" ng-repeat="item in categories.categoryList"
+      ui-sref="categoryDetail({categoryShortName : item.short_name})">
+    {{ item.name }} ({{ item.short_name }})
+  </li>
+</ul>
