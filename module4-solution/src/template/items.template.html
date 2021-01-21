@@ -5,8 +5,14 @@
 <a ui-sref="home">Back to home page.</a>
 <!-- <input type="button" ng-click="cateCtrl.getItems()"
        class="btn btn-lg btn-primary" value="List items"> -->
-<ul>
+<!-- <ul>
   <li ng-repeat="singleDish in cateCtrl.jsonData.menu_items">
     NAME:{{singleDish.name}}, DESCRIPTION:{{singleDish.description}}
   </li>
-</ul>
+</ul> -->
+
+
+
+<li ng-repeat="singleDish in cateCtrl.jsonData.menu_items">
+  {{singleDish}}
+</li>
