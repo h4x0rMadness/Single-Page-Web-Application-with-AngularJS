@@ -2,6 +2,7 @@
 
 ### Single Page Web Application with AngularJS, original course by Yaakov Chaikin from Johns Hopkins University on [Coursera](https://www.coursera.org/learn/single-page-web-apps-with-angularjs/home/welcome)
 
+<img src="https://github.com/h4x0rMadness/Single-Page-Web-Application-with-AngularJS/blob/main/cover.png" />
 
 [Module 1 | Introduction to AngularJS](https://h4x0rmadness.github.io/Single-Page-Web-Application-with-AngularJS/module1-solution/)
 
